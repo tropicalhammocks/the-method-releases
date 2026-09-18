@@ -1,11 +1,15 @@
 {
-  "version": "0.1.1",
-  "pub_date": "2026-09-18T14:40:17Z",
-  "notes": "The Method v0.1.1",
+  "version": "0.2.0",
+  "pub_date": "2026-09-18T15:56:40Z",
+  "notes": "The Method v0.2.0",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbXpIdERmZFgwdVJzRENaZStLMXNXZktCakFELzYyb0NiTjdyRW9BT0FuU3hFNVZkTVdEY0NhZmpST0JjQTVYd3pmLy96ZWl1VkpuZ1NWUS9LUGtnTVE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzQyMTg3CWZpbGU6VGhlIE1ldGhvZF8wLjEuMV94NjQtc2V0dXAuZXhlCi9BSjU1T01OYi9QSE96RFhZRDc2elUrZ3N2b21MY0xqeDg1VTFDTmdIYjMrd3F1ZDB2UUlIaysrZVcyQTVjYnJUOUFSeWFDeWVzUk9YdmlGQUEwcEJBPT0K",
-      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/The.Method_0.1.1_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbXhCblU2MklXU2dON1kvUk5OY2p5emFSRU5KdER6S3o3YUtTR2ptcWVjSWdkNUFkSmhvOGxpK1Q3emZhWjZ3Tjl6elFZakNRang2aGRWcmNzNXc1R3d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzQ2OTc3CWZpbGU6VGhlIE1ldGhvZF8wLjIuMF94NjQtc2V0dXAuZXhlCkR4aW4zaUkxeGhpZmZWWVBHb3dKSGQwOFVWTVZLQjAxemQxTlRNV0NPWXpFZFRDdTc3VlBxMHlLYXlnQzJZVVkvdGwyR2lWVkpiUG1aWHU0bXA1REJRPT0K",
+      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/The.Method_0.2.0_x64-setup.exe"
+    },
+    "darwin-universal": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbTRia3pwSFZlVnI1OTJEQmYwekVoU0V0MmpRelRRZis3Zm1saUZhUUpmelJFdWNqRldsb3JUbnFSazFyanpJRUNBK1I1d3JIUVh2cTcrQnVqRXVjdEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NzQ2MzQ0CWZpbGU6VGhlIE1ldGhvZC5hcHAudGFyLmd6CjVJTC9qZGtQYUp6SzNqOEJBRUFDMEJTOEJWWnNISmFOZjNMdjVJZnNsd1ZuQUZMM3h1VUJraGlDNG9yMENPeFkwR01GK29LWXZBejU0cWg5eloyVEFBPT0K",
+      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/The.Method_0.2.0_universal.app.tar.gz"
     }
   }
 }
