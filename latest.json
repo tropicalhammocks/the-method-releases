@@ -1,14 +1,14 @@
 {
-  "version": "0.4.0",
-  "pub_date": "2026-09-21T11:51:26Z",
-  "notes": "The Method v0.4.0",
+  "version": "0.4.1",
+  "pub_date": "2026-09-21T12:35:29Z",
+  "notes": "The Method v0.4.1",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbThVK0FtQnc3bHFxazdHY0xRNnBoYzJlamdJVkUxWlJqdXVZeGRwbXZZazRoODBTdXduajAxT3g4UGY1bzZTbksrZStjM1FqdGM2N0FCNGlIWlFmMGdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5OTkxMjI0CWZpbGU6VGhlIE1ldGhvZF8wLjQuMF94NjQtc2V0dXAuZXhlCmhLT2hXMUQzbUpRRUJ0eklxQVYwTkdsVStSVHhjZ3hMajBiQ2Z3Zk1Db0dwQkRmT2ZkVS83ZnlYdEIvOVdabFVoaGgzNDlaVkIva2x3T1FlcnA3dERRPT0K",
-      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/The%20Method_0.4.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbS9OWWVNMzQrZmJENWdWMEhKVnZoR2V0a3ZXK3NOcHJqS0l1YkJmWVcrNHNqeHRrQi9nRldvWjl5cGQ3djAxQUJXUFBxekxQMWZPUGN4aUt3QTIzcUFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5OTk0MTEzCWZpbGU6VGhlIE1ldGhvZF8wLjQuMV94NjQtc2V0dXAuZXhlCno2akZaMUJiRVU3UjhjWFZBdGtNQlBnZEkxNFhQUEVkK2xmbXhrVldJZjhtSytleUlOVHRHNHQyMTI4V0xzcFA4a00wMHhFTzRpaGM4MlRmZ2twbUJ3PT0K",
+      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/The%20Method_0.4.1_x64-setup.exe"
     },
     "darwin-universal": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbXhvSlFSN1JSTmV1dm5FYnJlZ1hjb1R0dFp1STA3cjBzL2ZCTElJTy9raTJ1NmVrOFZ5d3pJWEQ0Mms5UWNYZk5POGp4MXp1L2VQMlF0WGFTNDBEaEFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5OTkwODY4CWZpbGU6VGhlIE1ldGhvZC5hcHAudGFyLmd6CjF2dWxLZ1pLblRhYW1YeXl1dWlMVjFOdEUrNUVEaGlKeU5vTnowbHZFckdWekZqN0wybGYreGtJem4rQ0Nvb0FCWnJrS2hkVUNuM29LM0d0RTRkeUNRPT0K",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbTFOWlBVTXpGQVRFdDRJVVVJcHJyS1AwZEJabkZaN1JTZDFvcmpxU2tRdHcrQnAzNXNCcllaak1oSDBrbHB0T2RhU29LSnRUUUJoZjJzRGROZ0VvakFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5OTkzOTI5CWZpbGU6VGhlIE1ldGhvZC5hcHAudGFyLmd6CjNFbldlSWthcTlCSDBYZUlzeXdNYVVWcWhQUHVJNUZRaU9kOG9idHlMazBLYkM0U3NKWXQvK2VtRGlGRlpTUmJMMy9SaUVEN0NTT2V4WGREbEpvbkJ3PT0K",
       "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/The%20Method.app.tar.gz"
     }
   }
