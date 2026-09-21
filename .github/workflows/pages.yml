@@ -19,10 +19,13 @@ permissions:
   pages: write
   id-token: write
 
-# One at a time, newest wins. Two releases close together should not race.
+# One at a time, in order. They must queue rather than cancel each other:
+# a release pushes the web app and then the update file a few minutes later,
+# and cancelling the first push mid-flight is what used to leave the site
+# stuck on the previous version.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   publish:
