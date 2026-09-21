@@ -1,0 +1,57 @@
+# Put the web app live.
+#
+# This used to be GitHub's own branch build, which copied the whole repository
+# to the site. That stopped working once the repository had a few releases of
+# installers in it, and it failed without saying why. This does the job
+# explicitly instead: it publishes the `web` folder and nothing else.
+#
+# The installers stay in the repository and are fetched straight from it by the
+# update check, so they do not need to be part of the site.
+name: Put the web app live
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One at a time, newest wins. Two releases close together should not race.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    name: Publish the web app
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.live.outputs.page_url }}
+    steps:
+      - name: Take a copy of the repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Gather the site
+        # Kept under `web/` so the address people already have keeps working.
+        run: |
+          mkdir -p site/web
+          cp -R web/. site/web/
+          touch site/.nojekyll
+
+      - name: Check the web app is really there
+        run: test -s site/web/index.html
+
+      - name: Parcel it up
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Put it live
+        id: live
+        uses: actions/deploy-pages@v4
