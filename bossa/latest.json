@@ -1,0 +1,19 @@
+{
+  "version": "0.91.0",
+  "pub_date": "2026-10-06T23:06:34Z",
+  "notes": "Bossa v0.91.0",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbThaOWVISS9wTUdreWludklGQVZmOHRBS0FpY1NTcFlhUzFjaEVaKzJKVFdMZFAwSFBWRnkxaVFQa1F5bUlhTHQ4KzVlQ3Z3UTl3VVUzay9lOCtCRkE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzI3ODkwCWZpbGU6Qm9zc2FfMC45MS4wX3g2NC1zZXR1cC5leGUKWmVoMGRQVHZpaWRIVkExbDN3dE1zcXNVSjFzZnYxN29MVWRoclFRTElra3FaWnFCUmtwdS9OT2dZTGNEZ3N0UTFkbSt4aUhBVjViY0EzWW44clBWQ2c9PQo=",
+      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/bossa/Bossa_0.91.0_x64-setup.exe"
+    },
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbXdnMkVZWCszc2FUN28vQU5UNmQ3bUVhK2EzaTNhY3Y4d0szWkYxdENXbTQxMjZJQjN6V2xtZ0FDYmwwNnU0NnJHTmRTWU5HZ1JGMzZGNHFEeXg4QVFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzI3NDc4CWZpbGU6Qm9zc2EuYXBwLnRhci5negpwdHlJQm5IdjF3dXovTFA1Tk00ZkVHMU5kdkZEbnBsUmlwWWY1STFVYlhhQkttUFZDTHQ5bXNoR2xzbGRQQ0liR09LeDlzVEpCT3lPQmFEZnBxT05EUT09Cg==",
+      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/bossa/Bossa.app.tar.gz"
+    },
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbXdnMkVZWCszc2FUN28vQU5UNmQ3bUVhK2EzaTNhY3Y4d0szWkYxdENXbTQxMjZJQjN6V2xtZ0FDYmwwNnU0NnJHTmRTWU5HZ1JGMzZGNHFEeXg4QVFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzI3NDc4CWZpbGU6Qm9zc2EuYXBwLnRhci5negpwdHlJQm5IdjF3dXovTFA1Tk00ZkVHMU5kdkZEbnBsUmlwWWY1STFVYlhhQkttUFZDTHQ5bXNoR2xzbGRQQ0liR09LeDlzVEpCT3lPQmFEZnBxT05EUT09Cg==",
+      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/bossa/Bossa.app.tar.gz"
+    }
+  }
+}
