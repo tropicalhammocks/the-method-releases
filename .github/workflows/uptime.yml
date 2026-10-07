@@ -26,8 +26,10 @@ jobs:
         id: check
         env:
           RELEASES: https://raw.githubusercontent.com/${{ github.repository }}/main
-          # bossa-live, the real accounts' Supabase project
+          # bossa-live, the real accounts' Supabase project, and its publishable key (public by
+          # design: it is in every copy of the account pages; the-method's supabase/projects.json)
           SUPABASE: https://ysenmiihehbnsasulkok.supabase.co
+          SUPABASE_KEY: sb_publishable_ydAS_w_kqLJlcWy6Quf9Ew_Ht7Ad_yj
         run: |
           set -u
           problems=()
@@ -46,11 +48,9 @@ jobs:
             *) problems+=("https://staging.bossa.day/ answered \"$where\", not Access's sign-in") ;;
           esac
 
-          # The account server answers (any reply short of a server error)
-          code=$(status "$SUPABASE/auth/v1/health")
-          if [ "$code" = 000 ] || [ "$code" -ge 500 ]; then
-            problems+=("Supabase auth on bossa-live answered $code")
-          fi
+          # The account server says it's healthy
+          code=$(status -H "apikey: $SUPABASE_KEY" "$SUPABASE/auth/v1/health")
+          [ "$code" = 200 ] || problems+=("Supabase auth on bossa-live answered $code, not 200")
 
           # The desktop apps' update file parses, and every installer in it downloads
           if latest=$(curl -sf --max-time 20 "$RELEASES/bossa/latest.json") && echo "$latest" | jq -e . > /dev/null; then
