@@ -1,0 +1,100 @@
+# Is Bossa up? Every 30 minutes, from this public repository, where GitHub's minutes are free.
+# On a failure it opens (or adds to) an issue labelled "outage"; when everything answers again it
+# says so and closes it. GitHub emails Robert either way; the merge chat triages.
+# No outside actions: only curl, jq and the gh command GitHub's runners already have.
+name: uptime
+
+on:
+  schedule:
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: uptime
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check bossa.day, staging, the account server and the update file
+        id: check
+        env:
+          RELEASES: https://raw.githubusercontent.com/${{ github.repository }}/main
+          # bossa-live, the real accounts' Supabase project
+          SUPABASE: https://ysenmiihehbnsasulkok.supabase.co
+        run: |
+          set -u
+          problems=()
+          status() { curl -s -o /dev/null -w '%{http_code}' --max-time 20 "$@"; }
+
+          # The website, the web version and sign-in answer 200
+          for path in / /app/ /sign-in/; do
+            code=$(status "https://bossa.day$path")
+            [ "$code" = 200 ] || problems+=("https://bossa.day$path answered $code, not 200")
+          done
+
+          # Staging sends a stranger to Cloudflare Access's sign-in
+          where=$(curl -s -o /dev/null -w '%{http_code} %{redirect_url}' --max-time 20 https://staging.bossa.day/)
+          case "$where" in
+            302\ *cloudflareaccess.com*) ;;
+            *) problems+=("https://staging.bossa.day/ answered \"$where\", not Access's sign-in") ;;
+          esac
+
+          # The account server answers (any reply short of a server error)
+          code=$(status "$SUPABASE/auth/v1/health")
+          if [ "$code" = 000 ] || [ "$code" -ge 500 ]; then
+            problems+=("Supabase auth on bossa-live answered $code")
+          fi
+
+          # The desktop apps' update file parses, and every installer in it downloads
+          if latest=$(curl -sf --max-time 20 "$RELEASES/bossa/latest.json") && echo "$latest" | jq -e . > /dev/null; then
+            for url in $(echo "$latest" | jq -r '.platforms[]?.url' | sort -u); do
+              code=$(status -L -r 0-0 "$url")
+              case "$code" in
+                200|206) ;;
+                *) problems+=("$url, named in bossa/latest.json, answered $code") ;;
+              esac
+            done
+          else
+            problems+=("bossa/latest.json didn't download, or isn't valid JSON")
+          fi
+
+          {
+            echo 'report<<END_OF_REPORT'
+            if [ ${#problems[@]} -eq 0 ]; then
+              echo "Everything answered at $(date -u '+%Y-%m-%d %H:%M UTC')."
+            else
+              echo "Checked at $(date -u '+%Y-%m-%d %H:%M UTC'). Not working:"
+              for p in "${problems[@]}"; do echo "- $p"; done
+            fi
+            echo 'END_OF_REPORT'
+            echo "failed=$([ ${#problems[@]} -eq 0 ] && echo false || echo true)"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Open, add to or close the outage issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          FAILED: ${{ steps.check.outputs.failed }}
+          REPORT: ${{ steps.check.outputs.report }}
+          RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh label create outage --color B60205 --description "Bossa is down: opened and closed by the uptime check" 2>/dev/null || true
+          open=$(gh issue list --label outage --state open --json number --jq '.[0].number // empty')
+          body=$(printf '%s\n\n[This check](%s)' "$REPORT" "$RUN")
+          if [ "$FAILED" = true ]; then
+            if [ -n "$open" ]; then
+              gh issue comment "$open" --body "$body"
+            else
+              gh issue create --label outage --title "Bossa outage: something isn't answering" --body "$body"
+            fi
+          elif [ -n "$open" ]; then
+            gh issue comment "$open" --body "Recovered. $body"
+            gh issue close "$open"
+          fi
