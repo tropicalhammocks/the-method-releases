@@ -1,19 +1,19 @@
 {
-  "version": "0.211.0",
-  "pub_date": "2026-10-16T03:24:27Z",
-  "notes": "Bossa v0.211.0-staging",
+  "version": "0.290.0",
+  "pub_date": "2026-10-22T11:55:19Z",
+  "notes": "Bossa v0.290.0-staging",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbTVzRUkxUFdwTE5sSGtkZ3hqbk12VTBQWVhGdC9tYTFLN2g4bjh4MEc2MGlETlVrNmF3S2dSYnBSOG9iNTdpdmlYSGU0cVY4ZVFnYnNFOGRvRW1Mb2c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTIwOTI5CWZpbGU6Qm9zc2FfMC4yMTEuMF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC4yMTEuMAoyamcxTHlCNHdHVitkelljdThlUzIrL3k2OEhNbTVEM1hiWG0yYUt6cmtJOURIaEdGeU90WDdkRjA1ZHh0THYweVJqc3lKNTVoaHpnQlI5RkhoS25EUT09Cg==",
-      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/bossa-staging/Bossa_0.211.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbTBHVDN4azVGS1BNU2JCOHZGVGFVUzl5OHU4NEVlNnAvRlFBNTlOS2Q0bXF6RVg2VkxkS1ZCRGJWSGVQQ0U1SUxublZYRzBOcnA0SlRaWjhVNmU3clFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjY5OTIyCWZpbGU6Qm9zc2FfMC4yOTAuMF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC4yOTAuMApUQWgyRlJOMkFkcjVVVE9VbnVubThuYUQzai9WT1FXck9Xa2J5Wjg1c3NPVUx4UDhoS2ZLL3FPN3FPM1pyVTB3ZTFXbmdRRkN1bjJ1M1l4cW9sdURBUT09Cg==",
+      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/bossa-staging/Bossa_0.290.0_x64-setup.exe"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbTFUZG9YajUzck4rZmJhaE5QSm1nQzR0QzltWGxjdGZxZnVDaGFKRVhTTlZPSkc2aGxLLzVKcGVkeEprbHFVbDFzZHVsVW41VjRvQU5uTnljTEQySEFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTIwMzEzCWZpbGU6Qm9zc2EuYXBwLnRhci5negl2ZXJzaW9uOjAuMjExLjAKOXd4QStVQ3pLVzhpVmluUUs3Qmc4aDJVTzJTblNyem94NkQrZE56QnU5UXBNZkdlQ0ZHeFhyL25qVHdSSmpEQ1dic3ZMT25XWVNKSzJZVHNRbm1jQVE9PQo=",
-      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/bossa-staging/Bossa_0.211.0_universal.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbTY2MXEvR0Y0OW1VT0dRUWZTa3ViRERvV210NlRGQXJRN1ZjL01IVFVCc2k5RHB1OWk1Y1NOREpQVS9iQXBvUTFxZFFFZXJMVXRHcVEvN0lJUkpha0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjY5MDcxCWZpbGU6Qm9zc2EuYXBwLnRhci5negl2ZXJzaW9uOjAuMjkwLjAKdHh6WU9RZXNBSFE3V3JQc09JcTRYKytPTFhQREZ3YjQrZUtsRjgvOTVkTk1EWjNvVGlFWVRRUU5GSjEvM1ZlNGRqMW9majZYd3VBQ0Z2Zk5BblQ5QVE9PQo=",
+      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/bossa-staging/Bossa_0.290.0_universal.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbTFUZG9YajUzck4rZmJhaE5QSm1nQzR0QzltWGxjdGZxZnVDaGFKRVhTTlZPSkc2aGxLLzVKcGVkeEprbHFVbDFzZHVsVW41VjRvQU5uTnljTEQySEFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTIwMzEzCWZpbGU6Qm9zc2EuYXBwLnRhci5negl2ZXJzaW9uOjAuMjExLjAKOXd4QStVQ3pLVzhpVmluUUs3Qmc4aDJVTzJTblNyem94NkQrZE56QnU5UXBNZkdlQ0ZHeFhyL25qVHdSSmpEQ1dic3ZMT25XWVNKSzJZVHNRbm1jQVE9PQo=",
-      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/bossa-staging/Bossa_0.211.0_universal.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbTY2MXEvR0Y0OW1VT0dRUWZTa3ViRERvV210NlRGQXJRN1ZjL01IVFVCc2k5RHB1OWk1Y1NOREpQVS9iQXBvUTFxZFFFZXJMVXRHcVEvN0lJUkpha0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjY5MDcxCWZpbGU6Qm9zc2EuYXBwLnRhci5negl2ZXJzaW9uOjAuMjkwLjAKdHh6WU9RZXNBSFE3V3JQc09JcTRYKytPTFhQREZ3YjQrZUtsRjgvOTVkTk1EWjNvVGlFWVRRUU5GSjEvM1ZlNGRqMW9majZYd3VBQ0Z2Zk5BblQ5QVE9PQo=",
+      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/bossa-staging/Bossa_0.290.0_universal.app.tar.gz"
     }
   }
 }
