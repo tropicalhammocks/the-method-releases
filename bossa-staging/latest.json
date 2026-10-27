@@ -1,19 +1,11 @@
 {
-  "version": "0.290.0",
-  "pub_date": "2026-10-22T11:55:19Z",
-  "notes": "Bossa v0.290.0-staging",
+  "version": "0.318.0",
+  "pub_date": "2026-10-27T15:24:12Z",
+  "notes": "Bossa v0.318.0-staging",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbTBHVDN4azVGS1BNU2JCOHZGVGFVUzl5OHU4NEVlNnAvRlFBNTlOS2Q0bXF6RVg2VkxkS1ZCRGJWSGVQQ0U1SUxublZYRzBOcnA0SlRaWjhVNmU3clFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjY5OTIyCWZpbGU6Qm9zc2FfMC4yOTAuMF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC4yOTAuMApUQWgyRlJOMkFkcjVVVE9VbnVubThuYUQzai9WT1FXck9Xa2J5Wjg1c3NPVUx4UDhoS2ZLL3FPN3FPM1pyVTB3ZTFXbmdRRkN1bjJ1M1l4cW9sdURBUT09Cg==",
-      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/bossa-staging/Bossa_0.290.0_x64-setup.exe"
-    },
-    "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbTY2MXEvR0Y0OW1VT0dRUWZTa3ViRERvV210NlRGQXJRN1ZjL01IVFVCc2k5RHB1OWk1Y1NOREpQVS9iQXBvUTFxZFFFZXJMVXRHcVEvN0lJUkpha0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjY5MDcxCWZpbGU6Qm9zc2EuYXBwLnRhci5negl2ZXJzaW9uOjAuMjkwLjAKdHh6WU9RZXNBSFE3V3JQc09JcTRYKytPTFhQREZ3YjQrZUtsRjgvOTVkTk1EWjNvVGlFWVRRUU5GSjEvM1ZlNGRqMW9majZYd3VBQ0Z2Zk5BblQ5QVE9PQo=",
-      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/bossa-staging/Bossa_0.290.0_universal.app.tar.gz"
-    },
-    "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbTY2MXEvR0Y0OW1VT0dRUWZTa3ViRERvV210NlRGQXJRN1ZjL01IVFVCc2k5RHB1OWk1Y1NOREpQVS9iQXBvUTFxZFFFZXJMVXRHcVEvN0lJUkpha0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjY5MDcxCWZpbGU6Qm9zc2EuYXBwLnRhci5negl2ZXJzaW9uOjAuMjkwLjAKdHh6WU9RZXNBSFE3V3JQc09JcTRYKytPTFhQREZ3YjQrZUtsRjgvOTVkTk1EWjNvVGlFWVRRUU5GSjEvM1ZlNGRqMW9majZYd3VBQ0Z2Zk5BblQ5QVE9PQo=",
-      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/bossa-staging/Bossa_0.290.0_universal.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQ28xVGJvOVRsbTY0WklKb1krNHN2RGxJZ1MrYkozWmJxaGFyM1dNM1E2dHVrUG5hbkc4emR1VHJnUHRIVkVMN1JCcjhaVHYvdXhCTUh4UGVoSGI4bTVRcnZxOERCYmd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMTE0NDcwCWZpbGU6Qm9zc2FfMC4zMTguMF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC4zMTguMAoyY0RKaEIvZmxqS1dJN0tIaHZ2bktwaGt5ak5sZit0YmdwV1ovR1QweXYxRGdXQTQweXFpOHBVTEExNkNpZFVYdTA3ZVZnOXh2QTFEdDNGRWZUSHFBZz09Cg==",
+      "url": "https://raw.githubusercontent.com/tropicalhammocks/the-method-releases/main/bossa-staging/Bossa_0.318.0_x64-setup.exe"
     }
   }
 }
